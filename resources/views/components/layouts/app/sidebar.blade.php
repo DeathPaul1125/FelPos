@@ -18,6 +18,11 @@
             </flux:navlist>
 
             <!-- agregando los nuevos links a los formularios -->
+            <flux:navlist variant="outline">
+                <flux:navlist.group :heading="__('Ventas')" class="grid">
+                    <flux:navlist.item icon="credit-card" :href="route('dashboard')" :current="request()->routeIs('dashboard')" wire:navigate>{{ __('Ventas') }}</flux:navlist.item>
+                </flux:navlist.group>
+            </flux:navlist>
 
             <flux:spacer />
 

@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('payment_method')->default('cash');
             $table->string('status')->default('completed');
             $table->unsignedBigInteger('user_id')->nullable();
+            $table->unsignedBigInteger('customer_id')->nullable();
             $table->timestamps();
         });
     }
